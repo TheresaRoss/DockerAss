@@ -49,6 +49,8 @@ VALUES
 /*!40000 ALTER TABLE `user_profile` ENABLE KEYS */;
 UNLOCK TABLES;
 
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '123'; ALTER USER 'users_service' IDENTIFIED WITH mysql_native_password BY '123'; flush privileges;
+
 
 
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
